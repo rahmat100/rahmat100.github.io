@@ -42,7 +42,7 @@ setInterval(showtime = () => {
     
     // for displaying week of the day we will use getDay() method but it will display the number from 0-6 where 0 - sunday and 6-saturday
     // firstly we will create array of day of the week 
-    const weekday = ["Sun","Mon","Tue","Wed","Thu","Fri","Sat"];
+    const weekday = ["Minggu","Senin","Selasa","Rabu","Kamis","Jumat","Sabtu"];
     // as u know that indexing of array starts from 0
     // for getting item from array using index we use method like
     // array_name[index_no_of_item]
@@ -58,7 +58,7 @@ setInterval(showtime = () => {
 
     // for month we will use getMonth() method but it returns number from 0-11 where 0-january and 11-december
     // we will do same as we had done to find day of the week we will create array of month and the number that will get from getMonth() method will be passed in array as index 
-    const month = ["January","February","March","April","May","June","July","August","September","October","November","December"];
+    const month = ["Januari","Februari","Maret","April","Mei","Juni","Juli","Agustus","September","Oktober","November","Desember"];
     let currmonth = month[time.getMonth()];
     datespan = document.getElementById("date");
     datespan.innerHTML = date+" "+currmonth;
